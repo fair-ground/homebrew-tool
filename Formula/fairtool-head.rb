@@ -7,7 +7,8 @@ class FairtoolHead < Formula
   head "https://github.com/fair-ground/Fair.git", branch: "main"
 
   depends_on "swift"
-  uses_from_macos "swift", since: :big_sur # Swift 5.5.0
+
+  uses_from_macos "swift"
 
   def install
     system "swift", "build", "--product", "fairtool", "-c", "release", \
