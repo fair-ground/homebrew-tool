@@ -6,8 +6,6 @@ class FairtoolHead < Formula
   license "AGPL-3.0"
   head "https://github.com/fair-ground/Fair.git", branch: "main"
 
-  depends_on "swift"
-
   uses_from_macos "swift"
 
   def install
