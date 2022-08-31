@@ -4,6 +4,14 @@ class Fairtool < Formula
   url "https://github.com/fair-ground/Fair.git", tag: "0.5.12", revision: "ed436ca54ec5f9f475c9c27d12bcde01706f81b4"
   license "AGPL-3.0"
 
+  bottle do
+    root_url "https://github.com/fair-ground/Fair/releases/download/0.5.12"
+
+    sha256 cellar: :any, arm64_monterey: "dbae0a586f4deaa06b16fdb84622aec2348d46af1f71828bd1f3ddb75a815590"
+    sha256 cellar: :any, monterey: "4e24f9e2903331745a4e0c52d4fce384663c7ec7972c375751d0cbf34a521efd"
+    sha256 cellar: :any, x86_64_linux: "bba0f23337180b3b8f67c226b5906abbee0aa67a00f7bf305cc1fc7e9f9405ea"
+  end
+
   head "https://github.com/fair-ground/Fair.git", branch: "main"
 
   uses_from_macos "swift"
