@@ -1,16 +1,8 @@
 class Fairtool < Formula
   desc "Tools for managing an ecosystem of app sources"
   homepage "https://github.com/fair-ground/Fair"
-  url "https://github.com/fair-ground/Fair.git", tag: "0.5.14", revision: "f39d1ac83cd0ad5dec1ab4cdd7bbc509cfd2a3d2"
+  url "https://github.com/fair-ground/Fair.git", tag: "0.5.15", revision: "10e3f8c3d86c855983010f042b4db15d6abb8cca"
   license "AGPL-3.0"
-
-  bottle do
-    root_url "https://github.com/fair-ground/Fair/releases/download/0.5.14"
-
-    sha256 cellar: :any, arm64_monterey: "5449bd5f4d15aa4571e6778cf36a32f3d9cf3e4e2da40c92db7c63dcae03b9f1"
-    sha256 cellar: :any, monterey: "c86a5c0e1fb99a3925fe3deb6dea0dee1b8f4d8bd57247f95379e72bbb2164ba"
-    sha256 cellar: :any, x86_64_linux: "d734ed739a6cf7ff8122045dda65fcd04438d3673e7c704d7e4466aeb49cc047"
-  end
 
   head "https://github.com/fair-ground/Fair.git", branch: "main"
 
