@@ -11,7 +11,7 @@ class FairtoolHead < Formula
   def install
     system "swift", "build", "--product", "fairtool", "-c", "debug", \
       "--disable-sandbox", "-Xswiftc", "-cross-module-optimization"
-    bin.install ".build/release/fairtool" => "fairtool-head"
+    bin.install ".build/debug/fairtool" => "fairtool-head"
   end
 
   test do
