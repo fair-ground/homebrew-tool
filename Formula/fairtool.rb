@@ -1,7 +1,7 @@
 class Fairtool < Formula
   desc "Tools for managing an ecosystem of app sources"
   homepage "https://github.com/fair-ground/Fair"
-  url "https://github.com/fair-ground/Fair.git", tag: "0.6.30", revision: "4b4b7284e763449dd3619cca670035e104955ffd"
+  url "https://github.com/fair-ground/Fair.git", tag: "0.6.31", revision: "50932cdb404e00291eefbff2166492af4fc2f54e"
   license "AGPL-3.0"
 
   head "https://github.com/fair-ground/Fair.git", branch: "main"
@@ -10,7 +10,7 @@ class Fairtool < Formula
 
   def install
     system "swift", "build", "--product", "fairtool", "-c", "release", "--disable-sandbox"
-    #*(ENV["HOMEBREW_FAIRTOOL_ARCH"] ? ["--arch", ENV["HOMEBREW_FAIRTOOL_ARCH"]] : [])
+    # *(ENV["HOMEBREW_FAIRTOOL_ARCH"] ? ["--arch", ENV["HOMEBREW_FAIRTOOL_ARCH"]] : [])
     bin.install ".build/release/fairtool"
   end
 
