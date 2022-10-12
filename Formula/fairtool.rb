@@ -10,7 +10,7 @@ class Fairtool < Formula
 
   def install
     system "swift", "build", "--product", "fairtool", "-c", "release",
-           "-Xswiftc", "-cross-module-optimization", "--disable-sandbox",
+           "--disable-sandbox", "--static-swift-stdlib",
            *(ENV["HOMEBREW_FAIRTOOL_ARCH"] ? ["--arch", ENV["HOMEBREW_FAIRTOOL_ARCH"]] : [])
     bin.install ".build/release/fairtool"
   end
