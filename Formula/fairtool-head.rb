@@ -9,8 +9,7 @@ class FairtoolHead < Formula
   uses_from_macos "swift"
 
   def install
-    system "swift", "build", "--product", "fairtool", "-c", "debug", \
-      "--disable-sandbox", "-Xswiftc", "-cross-module-optimization"
+    system "swift", "build", "--product", "fairtool", "-c", "debug", "--disable-sandbox"
     bin.install ".build/debug/fairtool" => "fairtool-head"
   end
 
