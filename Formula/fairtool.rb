@@ -9,8 +9,8 @@ class Fairtool < Formula
   uses_from_macos "swift"
 
   def install
-    system "swift", "build", "--product", "fairtool", "-c", "release", "--disable-sandbox"
-    # *(ENV["HOMEBREW_FAIRTOOL_ARCH"] ? ["--arch", ENV["HOMEBREW_FAIRTOOL_ARCH"]] : [])
+    system "swift", "build", "--product", "fairtool", "-c", "release", "--disable-sandbox",
+      *(ENV["HOMEBREW_FAIRTOOL_ARCH"] ? ["--arch", ENV["HOMEBREW_FAIRTOOL_ARCH"]] : [])
     bin.install ".build/release/fairtool"
   end
 
