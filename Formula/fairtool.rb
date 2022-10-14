@@ -1,7 +1,7 @@
 class Fairtool < Formula
   desc "Tools for managing an ecosystem of app sources"
   homepage "https://github.com/fair-ground/Fair"
-  url "https://github.com/fair-ground/Fair.git", tag: "0.6.32", revision: "a4f4b01450b06bf660ec690bef42b1d2cf2a3c50"
+  url "https://github.com/fair-ground/Fair.git", tag: "0.6.33", revision: "2feb7e9e0af1e84e50614687ef5932fedb0d0634"
   license "AGPL-3.0"
 
   head "https://github.com/fair-ground/Fair.git", branch: "main"
